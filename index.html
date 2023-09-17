@@ -1,13 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Icaria Demo</title>
+    <title>Icaria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   </head>
   <body>
-	<script src="assets/scripts/main.js"></script>
+    <div id="container-body" class="d-flex flex-column">
+        <div class="top-content d-flex flex-row justify-content-between py-3 px-5">
+            <div>
+                <a href="index.html">
+                    <img src="assets/imgs/Icaria.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="d-flex flex-row gap-4 align-items-center">
+                <span>Hola, Juan Pedro</span>
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="horizontal-slider">
+                <div class="card" data-target="#content1">
+                    <img src="assets/imgs/cardiacos.png" alt="Test Valoración Geriátrica">
+                    <span>Test Valoración Geriátrica</span>
+                </div>
+                <div class="card" data-target="#content2">
+                    <img src="assets/imgs/cardiacos.png" alt="Test Evaluación Deterioro Cognitivo">
+                    <span>Test Evaluación Deterioro Cognitivo</span>
+                </div>
+                <div class="card">
+                    <img src="assets/imgs/cardiacos.png" alt="Test Cardíacos">
+                    <span>Test Cardíacos</span>
+                </div>
+                <div class="card">
+                    <img src="assets/imgs/psicologicos.png" alt="Test Psicológicos">
+                    <span>Test Psicológicos</span>
+                </div>
+                <div class="card">
+                    <img src="assets/imgs/psicologicos.png" alt="Test Psicomotrices">
+                    <span>Test Psicomotrices</span>
+                </div>
+                <!-- ... puedes agregar más tarjetas según lo necesites -->
+            </div>
+        </div>
+
+        <div id="content1" class="content-detail d-flex flex-column gap-5 align-items-center" style="display: none !important;">
+            <div>
+                <span class="display-3">Test de valoración geriátrica</span>
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit ad id vel? Nemo asperiores quasi ad minus fuga autem ipsam ducimus quis unde quidem alias deleniti, nobis a accusamus.
+            </div>
+            <div>
+                <button data-target="#content-vg" class="btn btn-primary">Empezar test</button>
+            </div>
+        </div>
+
+        <div id="content-vg" class="d-flex flex-column align-items-center justify-content-around" style="display: none !important;">
+            <div>
+                Aqui ira el cuadrado con el div del paso en el que está, las imagenes que puede seleccionar, y una vez seleccioanda, aparece continuar
+            </div>
+
+            <div>
+                Barra de progreso que se va rellenando progresivamente
+            </div>
+        </div>
+
+        <div id="content2" class="content-detail d-flex flex-column gap-5 align-items-center" style="display: none !important;">
+            <div>
+                <span class="display-3">Test de evaluación deterioro cognitivo</span>
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit ad id vel? Nemo asperiores quasi ad minus fuga autem ipsam ducimus quis unde quidem alias deleniti, nobis a accusamus.
+            </div>
+            <div>
+                <button data-target="#content-dc" class="btn btn-primary">Empezar test</button>
+            </div>
+        </div>
+
+        <div id="content-dc" class="d-flex flex-column align-items-center justify-content-around" style="display: none !important;">
+            <div>
+                Aqui ira el cuadrado con el div del paso en el que está, las imagenes que puede seleccionar, y una vez seleccioanda, aparece continuar
+            </div>
+
+            <div>
+                Barra de progreso que se va rellenando progresivamente
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/scripts/main.js"></script>
   </body>
 </html>
