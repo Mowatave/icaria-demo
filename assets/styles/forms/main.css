@@ -1,0 +1,7 @@
+.main-content {
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 80vw;
+    border: 1px #266FF2 solid;
+    border-radius: 25px;
+}

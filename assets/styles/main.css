@@ -3,11 +3,6 @@ body {
     /* transition: opacity 1.5s ease; */
 }
 
-.logo {
-    width: 100px;
-    height: max-height;
-}
-
 .horizontal-slider {
     display: flex;
     overflow-x: auto;

@@ -27,3 +27,8 @@
         background-position: 0% 100%;
     }
 }
+
+.logo {
+    width: 100px;
+    height: max-height;
+}

@@ -1,3 +1,5 @@
+let selectedValues = {};
+
 $(document).ready(function() {
 
     let steps = [
@@ -11,6 +13,7 @@ $(document).ready(function() {
         "8. Memoria y pensamiento",
         "9. Visión",
         "10. Capacidad auditiva",
+        "¡Ha completado su Test de valoración geriátrica!"
     ]
 
     // Create a dict where we assign each step with a bunch of images
@@ -87,31 +90,58 @@ $(document).ready(function() {
     function updateImageContainer() {
         // Obtén el contenedor de imágenes
         let $imageContainer = $('#image-container');
-        
-        // Vacía el contenedor de imágenes
         $imageContainer.empty();
         
-        // Obtén las imágenes del paso actual
         let currentStepImages = images[currentStepIndex + 1];
-        
-        // Si hay imágenes para este paso, créalas y añádelas al contenedor
         if (currentStepImages && currentStepImages.length > 0) {
-            currentStepImages.forEach(function (src) {
+            currentStepImages.forEach(function (src, idx) {
                 let $img = $('<img>').attr('src', src).addClass('step-image');
-                $imageContainer.append($img);
+                let $div = $('<div>').addClass('step-image-container').attr('value', idx);
+                $div.append($img);
+                $imageContainer.append($div);
             });
         }
     }
     updateImageContainer();
 
     $('#next-btn').click(function () {
+        if(currentStepIndex == 10){
+            localStorage.setItem('selectedValues', JSON.stringify(selectedValues));
+            localStorage.setItem('test', 'vgi');
+            window.location.href = '/forms/resultados.html';
+            return;
+        }
+
         currentStepIndex++;
-        
+
         if (currentStepIndex < steps.length) {
             $('#step-container').text(steps[currentStepIndex]);
             updateImageContainer();
-        } else {
-            alert('Formulario completado!');
+            if (currentStepIndex == 10){
+                $('#next-btn').text('Ver resultados');
+                $('#image-container').hide();
+                return;
+            }
+            $('.step-image').removeClass('selected blurred');
+            $('#next-btn').css('opacity', '0');
+            $('#next-btn').prop('disabled', true);
         }
+    });
+    
+    $(document).on('click', '.step-image-container', function() {
+        selectedValues[currentStepIndex + 1] = $(this).attr('value');
+
+        $(this).siblings().addClass('blurred');
+        $(this).removeClass('blurred');
+
+        $(this).siblings().removeClass('selected');
+        $(this).addClass('selected');
+        $('#next-btn').css('opacity', '1');
+        $('#next-btn').prop('disabled', false);  
+    });
+
+    $("#exit").click(function() {
+        localStorage.clear();
+        window.location.href = "/index.html";
     });
 });

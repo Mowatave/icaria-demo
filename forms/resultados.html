@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Icaria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+    <link rel="stylesheet" href="/assets/styles/root.css">
+    <link rel="stylesheet" href="/assets/styles/forms/resultados.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div id="container-body" class="d-flex flex-column justify-content-between">
+        <div class="top-content d-flex flex-row justify-content-between py-3 px-5">
+            <div>
+                <a href="../index.html">
+                    <img src="/assets/imgs/Icaria.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="d-flex flex-row gap-4 align-items-center">
+                <span>Hola, Juan Pedro</span>
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </div>
+
+        <div class="d-flex flex-row align-items-center justify-content-center">
+            <div class="d-flex flex-column">
+                <div class="data-container d-flex flex-row">
+                    <div>Foto</div>
+                    <div class="d-flex flex-column">
+                        <div> Datos del paciente: </div>
+                        <div class="d-flex flex-column">
+                            <span>Nombre y Apellido:</span>
+                            <span>Juan Pedro García Rodriguez</span>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <span>Fecha de nacimiento:</span>
+                            <span>00/00/00</span>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <div class="d-flex flex-column">
+                                <div>DNI:</div>
+                                <div>00-000-000</div>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <div>Teléfono:</div>
+                                <div>000000000</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="tips-container d-flex flex-column">
+                    <div>Recomendaciones:</div>
+                    <div>De acuerdo a sus resultados le recomendamos que, </div>
+                    <div>
+                        <ul>
+                            <li>Cum sociis natoque penatibus et magnis.</li>
+                            <li>Donec quam felis, ultricies nec, pellentesque.</li>
+                            <li>Cum sociis natoque penatibus et magnis.</li>
+                            <li>Nulla consequat massa quis enim.</li>
+                            <li>In enim justo, rhoncus ut, imperdiet vennatis.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="results-vgi" class="d-flex flex-column">
+                <div class="spider-graph"></div>
+                <div class="results-info d-flex flex-column">
+                    <div class="d-flex flex-column">
+                        <div>Mejores resultados</div>
+                        <div class="best-results d-flex flex-row"></div>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div>Puntos críticos</div>
+                        <div class="worst-results d-flex flex-row"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="results-edc" class="d-flex flex-column">
+                Resultados EDC
+            </div>
+        </div>
+
+        <div class="download d-flex flex-row justify-content-center py-3 px-5">
+            <button type="button" id="download"> Descargar </button>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/assets/scripts/forms/results.js"></script>
+  </body>
+</html>
