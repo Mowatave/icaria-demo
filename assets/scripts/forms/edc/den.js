@@ -1,5 +1,3 @@
-let selectedValues = {};
-
 $(document).ready(function() {
 
     // Create a dict where we assign each step with a bunch of images
@@ -12,6 +10,14 @@ $(document).ready(function() {
         "/assets/imgs/edc/6.png",
     ];
 
+    let selectedValues = {};
+    let imagesHit = {
+        1: false,
+        2: false,
+        3: false,
+        4: false,
+        5: false,
+    }
     let currentImage = 0;
     let asserts = 0;
 
@@ -36,7 +42,9 @@ $(document).ready(function() {
         
                 localStorage.setItem("selectedValues", JSON.stringify(selectedValues));
                 localStorage.setItem("currentStepIndex", currentStepIndex.toString());
+                localStorage.setItem("imagesHit", JSON.stringify(imagesHit));
                 window.location.href = "/forms/edc.html";
+                return;
             });
         } else {
             $('#image-container').html('<img src="' + images[currentImage] + '" alt="Imagen"/>');
@@ -46,9 +54,11 @@ $(document).ready(function() {
     updateUI();
 
     $('#ok-btn, #wrong-btn').click(function () {
-        if(this.id === 'ok-btn') asserts++;
+        if(this.id === 'ok-btn') {
+            imagesHit[currentImage + 1] = true;
+            asserts++;
+        }
         currentImage++;
         updateUI();
     });
-
 });

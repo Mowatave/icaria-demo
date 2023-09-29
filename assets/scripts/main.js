@@ -34,13 +34,13 @@ $(document).ready(function() {
         }
     });
 
-    $('.btn.btn-primary').on('click', function() {
-        var targetTest = $(this).data('target');
+    $('#vgi').click(function() {
+        localStorage.clear();
+        window.location.href = '/forms/vgi.html';
+    });
 
-        // Ocultar el content-detail actual
-        $(this).closest('.content-detail').addClass('hidden');
-
-        // Mostrar el div cuyo id coincide con data-target
-        $(targetTest).show();
+    $('#edc').click(function() {
+        localStorage.clear();
+        window.location.href = '/forms/edc.html';
     });
 });

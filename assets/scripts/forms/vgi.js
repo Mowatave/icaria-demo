@@ -139,9 +139,4 @@ $(document).ready(function() {
         $('#next-btn').css('opacity', '1');
         $('#next-btn').prop('disabled', false);  
     });
-
-    $("#exit").click(function() {
-        localStorage.clear();
-        window.location.href = "/index.html";
-    });
 });

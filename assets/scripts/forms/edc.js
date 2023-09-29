@@ -52,18 +52,18 @@ $(document).ready(function() {
     if(currentStepIndex == 1) {
         localStorage.setItem("currentStepIndex", currentStepIndex.toString());
         localStorage.setItem("selectedValues", JSON.stringify(selectedValues));
+    } else if(currentStepIndex == 6) {
+        localStorage.setItem('test', 'edc');
+        window.location.href = "/forms/resultados.html";
+        return;
     }
         
     updateContent(currentStepIndex);
 
     $("#next-btn").click(function() {
         let url = stepsUrl[currentStepIndex];
-        if (url) window.location.href = url; // Carga la nueva URL si existe
-    });
-
-    $("#exit").click(function() {
-        localStorage.clear();
-        window.location.href = "/index.html";
+        if (url) window.location.href = url;
+        return;
     });
 
 });

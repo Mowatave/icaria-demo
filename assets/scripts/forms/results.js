@@ -47,9 +47,9 @@ $(document).ready(function() {
         });
 
     } else {
-        console.log(selectedValues);
         $('#results-edc').removeClass('hide-important');
 
+        renderTable();
     }
 
     $('#download').click(function() {
@@ -57,3 +57,33 @@ $(document).ready(function() {
     });
 
 });
+
+function renderTable() {
+    let $table = $('#results-table');
+
+    let images = {
+        1: ["Juego", "Cartas"],
+        2: ["Vehículo", "Coche"],
+        3: ["Fruta", "Pera"],
+        4: ["Inst. Musical", "Trompeta"],
+        5: ["Prenda vestir", "Zapatos"],
+        6: ["Cubierto", "Cuchara"],
+    };
+    let imagesHit = JSON.parse(localStorage.getItem('imagesHit'));
+
+    $.each(images, function (index, value) {
+        let hitSymbol = imagesHit[index] ? '✓' : 'X'; // Verifica si se ha acertado o no
+        let newRow = `<tr>
+                        <td>${value[0]}</td>
+                        <td>${value[1]}</td>
+                        <td>${hitSymbol}</td>
+                        <td>${getRandomSiNo()}</td>
+                        <td>${getRandomSiNo()}</td>
+                      </tr>`;
+        $table.append(newRow); // Añade la nueva fila a la tabla
+    });
+}
+
+function getRandomSiNo() {
+    return Math.random() < 0.5 ? 'Sí' : 'No';
+}
