@@ -1,6 +1,48 @@
-#ghost {
-    flex: 0 1;
-    visibility: hidden;
+button {
+    box-shadow: 0px 8px 8px -4px #18274B14;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px, 26px, 5px, 26px;
+    gap: 10px;
+    transition: 0.2s;
+}
+
+button:hover {
+    scale: 1.1;
+}
+
+#wrong-btn {
+    background: linear-gradient(90deg, #D1A3EE 0%, #D5C7F7 100%);
+}
+
+#ok-btn {
+    background: linear-gradient(90deg, #7AE8C0 0%, #55C1BB 100%);
+}
+
+#asserts {
+    font-family: Rubik;
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 1.1875px;
+    text-align: center;
+}
+
+#start {
+    width: 200px;
+}
+
+#time {
+    font-family: Rubik;
+    font-size: 71px;
+    font-weight: 500;
+    line-height: 57px;
+    letter-spacing: 3.56363582611084px;
+    text-align: center;
 }
 
 .progress-container {
@@ -14,7 +56,7 @@
 
 .progress-bar {
     height: 100%;
-    background-color: #76c7c0;
+    background-color: #7AE8C0;
     width: 0;
 }
 

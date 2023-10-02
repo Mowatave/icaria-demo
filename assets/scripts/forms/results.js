@@ -72,14 +72,21 @@ function renderTable() {
     let imagesHit = JSON.parse(localStorage.getItem('imagesHit'));
 
     $.each(images, function (index, value) {
-        let hitSymbol = imagesHit[index] ? '✓' : 'X'; // Verifica si se ha acertado o no
+        let hitSymbol = imagesHit[index] ? '1' : '0'; // Verifica si se ha acertado o no
+        let $td;
+        if (hitSymbol == '1') {
+            $td = '<td class="text-success"><i class="fa-solid fa-check"></i></td>';
+        }
+        else {
+            $td = '<td class="text-danger"><i class="fa-solid fa-xmark"></i></td>';
+        }
         let newRow = `<tr>
                         <td>${value[0]}</td>
                         <td>${value[1]}</td>
-                        <td>${hitSymbol}</td>
+                        ${$td}
                         <td>${getRandomSiNo()}</td>
                         <td>${getRandomSiNo()}</td>
-                      </tr>`;
+                    </tr>`;
         $table.append(newRow); // Añade la nueva fila a la tabla
     });
 }

@@ -10,19 +10,20 @@
     <link rel="stylesheet" href="/assets/styles/root.css">
     <link rel="stylesheet" href="/assets/styles/forms/main.css">
     <link rel="stylesheet" href="/assets/styles/forms/edc/timer.css">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
   </head>
   <body>
     <div id="container-body" class="d-flex flex-column justify-content-between align-items-center">
-        <div class="top-content d-flex flex-row justify-content-center py-3 px-5">
-            <div>
+        <div class="top-content d-flex flex-row justify-content-center py-3 px-5 mt-4">
+            <div class="header-test">
                 <span>Test de evaluación de deterioro cognitivo</span>
             </div>
         </div>
 
         <div class="main-content d-flex flex-column justify-content-between align-items-center">
             <div class="d-flex flex-row py-3 align-self-end">
-                <div class="close">
+                <div class="close px-4">
                     <a href="/index.html">
                         X
                     </a>
@@ -33,7 +34,7 @@
                 <div>
                     <button id="start">Comenzar</button>
                 </div>
-                <div>
+                <div class="my-4">
                     <span id="time">00:00</span>
                 </div>
                 <div class="progress-container"> 
@@ -41,9 +42,9 @@
                 </div>
             </div>
 
-            <div id="grader" class="d-flex flex-row justify-content-center gap-4">
+            <div id="grader" class="d-flex flex-row justify-content-center gap-4 mb-4">
                 <div><button id="wrong-btn" disabled> X </button></div>
-                <div><span id="asserts"> 0 </button></div>
+                <div class="d-flex justify-content-center align-items-center"><span id="asserts"> 0 </button></div>
                 <div><button id="ok-btn" disabled> ✓ </button></div>
             </div>
         </div>

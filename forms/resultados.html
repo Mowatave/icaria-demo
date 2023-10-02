@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
     <link rel="stylesheet" href="/assets/styles/root.css">
     <link rel="stylesheet" href="/assets/styles/forms/resultados.css">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <div id="container-body" class="d-flex flex-column justify-content-between">
@@ -20,67 +20,73 @@
                 </a>
             </div>
             <div class="d-flex flex-row gap-4 align-items-center">
-                <span>Hola, Juan Pedro</span>
-                <i class="fa-regular fa-user"></i>
+                <span class="welcome-text">Hola, Juan Pedro</span>
+                <img src="/assets/imgs/user.png" alt="user" class="user">
             </div>
         </div>
 
-        <div class="d-flex flex-row align-items-center justify-content-center">
-            <div class="d-flex flex-column">
-                <div class="data-container d-flex flex-row">
-                    <div>Foto</div>
-                    <div class="d-flex flex-column">
-                        <div> Datos del paciente: </div>
-                        <div class="d-flex flex-column">
-                            <span>Nombre y Apellido:</span>
-                            <span>Juan Pedro García Rodriguez</span>
+        <div class="d-flex flex-row justify-content-center gap-5">
+            <div id="results-data" class="d-flex flex-column justify-content-between">
+                <div class="data-container d-flex flex-row container-style gap-5 px-5 py-5">
+                    <div class="d-flex align-items-center">
+                        <img src="/assets/imgs/user-big.png" alt="user" class="user">
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                        <div class="data-header"> Datos del paciente: </div>
+                        <div class="d-flex flex-column gap-1">
+                            <span class="data-label">Nombre y Apellido:</span>
+                            <span class="data-text">Juan Pedro García Rodriguez</span>
                         </div>
-                        <div class="d-flex flex-column">
-                            <span>Fecha de nacimiento:</span>
-                            <span>00/00/00</span>
+                        <div class="d-flex flex-column gap-1">
+                            <span class="data-label">Fecha de nacimiento:</span>
+                            <span class="data-text">00/00/00</span>
                         </div>
-                        <div class="d-flex flex-row">
+                        <div class="d-flex flex-row gap-4">
                             <div class="d-flex flex-column">
-                                <div>DNI:</div>
-                                <div>00-000-000</div>
+                                <div class="data-label">DNI:</div>
+                                <div class="data-text">00-000-000</div>
                             </div>
                             <div class="d-flex flex-column">
-                                <div>Teléfono:</div>
-                                <div>000000000</div>
+                                <div class="data-label">Teléfono:</div>
+                                <div class="data-text">000000000</div>
                             </div>
 
                         </div>
                     </div>
                 </div>
-                <div class="tips-container d-flex flex-column">
-                    <div>Recomendaciones:</div>
-                    <div>De acuerdo a sus resultados le recomendamos que, </div>
+                <div class="tips-container d-flex flex-column container-style gap-3 px-5 py-5">
+                    <div class="data-header">Recomendaciones:</div>
+                    <div class="data-label">De acuerdo a sus resultados le recomendamos que: </div>
                     <div>
                         <ul>
-                            <li>Cum sociis natoque penatibus et magnis.</li>
-                            <li>Donec quam felis, ultricies nec, pellentesque.</li>
-                            <li>Cum sociis natoque penatibus et magnis.</li>
-                            <li>Nulla consequat massa quis enim.</li>
-                            <li>In enim justo, rhoncus ut, imperdiet vennatis.</li>
+                            <li class="data-text">Cum sociis natoque penatibus et magnis.</li>
+                            <li class="data-text">Donec quam felis, ultricies nec, pellentesque.</li>
+                            <li class="data-text">Cum sociis natoque penatibus et magnis.</li>
+                            <li class="data-text">Nulla consequat massa quis enim.</li>
+                            <li class="data-text">In enim justo, rhoncus ut, imperdiet vennatis.</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div id="results-vgi" class="d-flex flex-column">
-                <div class="spider-graph"></div>
-                <div class="results-info d-flex flex-column">
-                    <div class="d-flex flex-column">
-                        <div>Mejores resultados</div>
-                        <div class="best-results d-flex flex-row"></div>
+
+
+            <div id="results-vgi" class="d-flex flex-column container-style gap-3 py-5">
+                <div class="spider-graph py-1"></div>
+                <div class="results-info d-flex flex-column gap-3">
+                    <div class="d-flex flex-column gap-3">
+                        <div class="data-header text-center">Mejores resultados</div>
+                        <div class="best-results d-flex flex-row justify-content-center gap-3"></div>
                     </div>
-                    <div class="d-flex flex-column">
-                        <div>Puntos críticos</div>
-                        <div class="worst-results d-flex flex-row"></div>
+                    <div class="d-flex flex-column gap-3">
+                        <div class="data-header text-center">Puntos críticos</div>
+                        <div class="worst-results d-flex flex-row justify-content-center gap-3"></div>
                     </div>
                 </div>
             </div>
-            <div id="results-edc" class="d-flex flex-column">
-                <div>
+
+
+            <div id="results-edc" class="d-flex flex-column justify-content-between container-style py-4 px-4 gap-5">
+                <div class="px-3">
                     <table id="results-table">
                         <tr>
                             <th>Categoría</th>
@@ -91,20 +97,20 @@
                         </tr>
                     </table>
                 </div>
-                <div>
-                    <div>Fluidez Mujeres y Hombres:</div>
-                    <div>Detalla el resultado </div>
+                <div class="d-flex flex-column gap-2 px-5">
+                    <div class="data-header">Fluidez Mujeres y Hombres:</div>
+                    <div class="data-label">Detalla el resultado </div>
                     <div>
                         <ul>
-                            <li>Cum sociis natoque penatibus et magnis.</li>
-                            <li>Donec quam felis, ultricies nec, pellentesque.</li>
-                            <li>Cum sociis natoque penatibus et magnis.</li>
-                            <li>Nulla consequat massa quis enim.</li>
-                            <li>In enim justo, rhoncus ut, imperdiet vennatis.</li>
-                            <li>Cum sociis natoque penatibus et magnis.</li>
-                            <li>Donec quam felis, ultricies nec, pellentesque.</li>
-                            <li>In enim justo, rhoncus ut, imperdiet vennatis.</li>
-                            <li>Nulla consequat massa quis enim.</li>
+                            <li class="data-text">Cum sociis natoque penatibus et magnis.</li>
+                            <li class="data-text">Donec quam felis, ultricies nec, pellentesque.</li>
+                            <li class="data-text">Cum sociis natoque penatibus et magnis.</li>
+                            <li class="data-text">Nulla consequat massa quis enim.</li>
+                            <li class="data-text">In enim justo, rhoncus ut, imperdiet vennatis.</li>
+                            <li class="data-text">Cum sociis natoque penatibus et magnis.</li>
+                            <li class="data-text">Donec quam felis, ultricies nec, pellentesque.</li>
+                            <li class="data-text">In enim justo, rhoncus ut, imperdiet vennatis.</li>
+                            <li class="data-text">Nulla consequat massa quis enim.</li>
                         </ul>
                     </div>
                 </div>
@@ -112,7 +118,7 @@
         </div>
 
         <div class="download d-flex flex-row justify-content-center py-3 px-5">
-            <button type="button" id="download"> Descargar </button>
+            <button type="button" id="download" class="start-button"> Descargar </button>
         </div>
     </div>
 

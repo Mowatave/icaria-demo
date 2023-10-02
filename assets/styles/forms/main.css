@@ -5,3 +5,25 @@
     border: 1px #266FF2 solid;
     border-radius: 25px;
 }
+
+.header-test {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+#step-container {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.close a {
+    text-decoration: none;
+    color: #37383C;
+    font-size: 23px;
+}

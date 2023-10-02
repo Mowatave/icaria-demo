@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
     <link rel="stylesheet" href="assets/styles/root.css">
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <div id="container-body" class="d-flex flex-column">
+    <div id="container-body" class="d-flex flex-column justify-content-between">
         <div class="top-content d-flex flex-row justify-content-between py-3 px-5">
             <div>
                 <a href="index.html">
@@ -20,60 +21,64 @@
                 </a>
             </div>
             <div class="d-flex flex-row gap-4 align-items-center">
-                <span>Hola, Juan Pedro</span>
-                <i class="fa-regular fa-user"></i>
+                <span class="welcome-text">Hola, Juan Pedro</span>
+                <img src="assets/imgs/user.png" alt="user" class="user">
             </div>
         </div>
 
         <div class="main-content">
             <div class="horizontal-slider">
                 <div class="card" data-target="#content1">
-                    <img src="assets/imgs/cardiacos.png" alt="Test Valoración Geriátrica">
-                    <span>Test Valoración Geriátrica</span>
+                    <img src="assets/imgs/vgi.jpg" alt="Test Valoración Geriátrica">
+                    <span> <i class="fa-light fa-ballot-check"></i> &nbsp; Test Valoración Geriátrica</span>
                 </div>
                 <div class="card" data-target="#content2">
-                    <img src="assets/imgs/cardiacos.png" alt="Test Evaluación Deterioro Cognitivo">
-                    <span>Test Evaluación Deterioro Cognitivo</span>
+                    <img src="assets/imgs/edc.png" alt="Test Evaluación Deterioro Cognitivo">
+                    <span> <i class="fa-solid fa-lightbulb"></i> &nbsp; Test Evaluación Deterioro Cognitivo</span>
                 </div>
                 <div class="card">
                     <img src="assets/imgs/cardiacos.png" alt="Test Cardíacos">
-                    <span>Test Cardíacos</span>
+                    <span><i class="fa-solid fa-heart-pulse"></i> &nbsp; Test Cardíacos</span>
                 </div>
                 <div class="card">
-                    <img src="assets/imgs/psicologicos.png" alt="Test Psicológicos">
-                    <span>Test Psicológicos</span>
+                    <img src="assets/imgs/piscologico.png" alt="Test Psicológicos">
+                    <span><i class="fa-regular fa-head-side-brain"></i> &nbsp; Test Psicológicos</span>
                 </div>
                 <div class="card">
-                    <img src="assets/imgs/psicologicos.png" alt="Test Psicomotrices">
-                    <span>Test Psicomotrices</span>
+                    <img src="assets/imgs/psicomotriz.jpg" alt="Test Psicomotrices">
+                    <span><i class="fa-solid fa-person-walking-with-cane"></i> &nbsp; Test Psicomotrices</span>
                 </div>
                 <!-- ... puedes agregar más tarjetas según lo necesites -->
             </div>
         </div>
 
-        <div id="content1" class="content-detail d-flex flex-column gap-5 align-items-center" style="display: none !important;">
-            <div>
-                <span class="display-3">Test de valoración geriátrica</span>
+        <div id="content1" class="d-flex flex-column gap-5 align-items-center" style="display: none !important;">
+            <div class="d-flex flex-column align-items-center test-header">
+                <div>Test de valoración</div>
+                <div>geriátrica</div>
             </div>
-            <div>
+            <div class="w-25 text-center test-content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit ad id vel? Nemo asperiores quasi ad minus fuga autem ipsam ducimus quis unde quidem alias deleniti, nobis a accusamus.
             </div>
             <div>
-                <a type="button" role="button" id="vgi" class="btn btn-primary">Empezar test</a>
+                <a type="button" role="button" id="vgi" class="btn btn-primary start-button">Empezar test</a>
             </div>
         </div>
 
         <div id="content2" class="content-detail d-flex flex-column gap-5 align-items-center" style="display: none !important;">
-            <div>
-                <span class="display-3">Test de evaluación deterioro cognitivo</span>
+            <div class="d-flex flex-column align-items-center test-header">
+                <div>Test de evaluación</div>
+                <div>deterioro cognitivo</div>
             </div>
-            <div>
+            <div class="w-25 text-center test-content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit ad id vel? Nemo asperiores quasi ad minus fuga autem ipsam ducimus quis unde quidem alias deleniti, nobis a accusamus.
             </div>
             <div>
-                <a type="button" role="button" id="edc" class="btn btn-primary" >Empezar test</a>
+                <a type="button" role="button" id="edc" class="btn btn-primary start-button">Empezar test</a>
             </div>
         </div>
+
+        <div id="ghost"></div>
     </div>
 
 

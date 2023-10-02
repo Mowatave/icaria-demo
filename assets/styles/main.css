@@ -22,12 +22,14 @@ body {
 }
 
 .card {
+    border: none;
     flex: 0 0 auto; /* Esto asegura que las tarjetas no se estiren y mantengan su ancho */
     width: 500px; /* Ancho de las tarjetas */
     height: 800px; /* Altura de las tarjetas */
     background-color: #f5f5f5; /* Color de fondo de las tarjetas */
     border-radius: 30px; /* Redondeo de las esquinas de las tarjetas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor de las tarjetas */
+    -webkit-box-shadow: 0px 0px 50px -6px #000000; 
+    box-shadow: 0px 0px 15px -6px #000000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,11 +41,11 @@ body {
     overflow: hidden;
     cursor: pointer;
     background-image: 
-        radial-gradient(circle at 10% 15%, #ffffff 0%, transparent 70%),
-        radial-gradient(circle at 90% 85%, #f9fffe 0%, transparent 60%),
-        radial-gradient(circle at 55% 55%, #b5fdf3 0%, transparent 40%),
-        radial-gradient(circle at 20% 80%, #b8d0fb 0%, transparent 35%),
-        radial-gradient(circle at 70% 20%, #B5CFFD 0%, transparent 45%);
+        radial-gradient(circle at 10% 15%, #cda0ff 0%, transparent 70%),
+        radial-gradient(circle at 90% 85%, #ae9cff 0%, transparent 60%),
+        radial-gradient(circle at 55% 55%, #98abff 0%, transparent 40%),
+        radial-gradient(circle at 20% 80%, #90c9ff 0%, transparent 35%),
+        radial-gradient(circle at 70% 20%, #8cf6fa 0%, transparent 45%);
 }
 
 .card img {
@@ -54,8 +56,12 @@ body {
 }
 
 .card span {
-    font-size: 22px; /* Tamaño del texto */
+    font-size: 19px; /* Tamaño del texto */
     letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 1.097310185432434px;
+    padding-top: 20px;
     text-align: center; /* Centra el texto horizontalmente */
     flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
     display: flex; /* Convierte el span en un contenedor flex */
@@ -63,6 +69,26 @@ body {
     justify-content: center; /* Centra el contenido horizontalmente */
 }
 
+.test-header {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.test-content {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;    
+}
+
 .hidden {
     display: none !important;
+}
+
+.test-text {
+    text-align: center;
 }

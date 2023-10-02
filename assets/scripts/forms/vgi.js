@@ -120,6 +120,9 @@ $(document).ready(function() {
             if (currentStepIndex == 10){
                 $('#next-btn').text('Ver resultados');
                 $('#image-container').hide();
+                $('.main-content').removeClass('justify-content-between');
+                $('.main-content').addClass('justify-content-center');
+                $('.close a').hide();
                 return;
             }
             $('.step-image').removeClass('selected blurred');

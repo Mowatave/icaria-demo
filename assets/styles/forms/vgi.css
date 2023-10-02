@@ -1,8 +1,15 @@
 .step-image-container {
-    background-color: #fff;
+    background-color: white;
     border-radius: 25px;
     cursor: pointer;
     transition: 0.5s;
+    width: 141px;
+    height: 141px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 15px -8px black;
 }
 
 .step-image-container:hover {
@@ -10,13 +17,13 @@
 }
 
 .step-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 80%;
+    height: 80%;
 }
 
 .selected {
     transform: scale(1.1);
+    border: 1px solid black;
 }
 
 .blurred {

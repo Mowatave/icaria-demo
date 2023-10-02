@@ -13,7 +13,7 @@ $(document).ready(function() {
     let stepsInfo = {
         1: [
             "Muestre al paciente la pantalla con la imagen y pídale que la nombre.",
-            "Marque si la respuesta es correcta o errónea.En caso de respuesta errónea, indíquele el nombre correcto.",
+            "Marque si la respuesta es correcta o errónea. En caso de respuesta errónea, indíquele el nombre correcto.",
         ],
         2: [
             "Pídale al paciente que diga todos los nombres del sexo contrario al suyo que recuerde.",

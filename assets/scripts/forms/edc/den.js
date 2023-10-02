@@ -32,8 +32,9 @@ $(document).ready(function() {
             $('#ok-btn, #wrong-btn').prop('disabled', true);
             
             // Crea un nuevo botón con id submit-btn y añádelo al contenedor de imágenes.
-            let $submitButton = $('<button>').attr('id', 'submit-btn').text('Finalizar');
+            let $submitButton = $('<button>').attr('id', 'submit-btn').text('Finalizar').addClass('start-button');
             $('#image-container').append($submitButton);
+            $('#image-container').addClass('d-flex justify-content-center align-items-center flex-column');
             $submitButton.on('click', function() {
                 let currentStepIndex = parseInt(localStorage.getItem("currentStepIndex"));
         
