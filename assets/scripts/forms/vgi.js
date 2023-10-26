@@ -13,6 +13,10 @@ $(document).ready(function() {
         "8. Memoria y pensamiento",
         "9. Visión",
         "10. Capacidad auditiva",
+        "11. Dolor",
+        "12. Pérdida de peso involuntaria",
+        "13. Agresividad",
+        "14. Control de la vejiga",
         "¡Ha completado su Test de valoración geriátrica!"
     ]
 
@@ -83,7 +87,29 @@ $(document).ready(function() {
             "../assets/imgs/vgi/10/2.png",
             "../assets/imgs/vgi/10/3.png",
         ],
+        11: [
+            "../assets/imgs/vgi/11/1.png",
+            "../assets/imgs/vgi/11/2.png",
+            "../assets/imgs/vgi/11/3.png",
+        ],
+        12: [
+            "../assets/imgs/vgi/12/1.png",
+            "../assets/imgs/vgi/12/2.png",
+            "../assets/imgs/vgi/12/3.png",
+        ],
+        13: [
+            "../assets/imgs/vgi/13/1.png",
+            "../assets/imgs/vgi/13/2.png",
+            "../assets/imgs/vgi/13/3.png",
+        ],
+        14: [
+            "../assets/imgs/vgi/14/1.png",
+            "../assets/imgs/vgi/14/2.png",
+            "../assets/imgs/vgi/14/3.png",
+        ],
     }
+
+    console.log(steps.length)
 
     let currentStepIndex = 0;
 
@@ -105,7 +131,7 @@ $(document).ready(function() {
     updateImageContainer();
 
     $('#next-btn').click(function () {
-        if(currentStepIndex == 10){
+        if(currentStepIndex == steps.length-1){
             localStorage.setItem('selectedValues', JSON.stringify(selectedValues));
             localStorage.setItem('test', 'vgi');
             window.location.href = 'resultados.html';
@@ -117,7 +143,7 @@ $(document).ready(function() {
         if (currentStepIndex < steps.length) {
             $('#step-container').text(steps[currentStepIndex]);
             updateImageContainer();
-            if (currentStepIndex == 10){
+            if (currentStepIndex == steps.length-1){
                 $('#next-btn').text('Ver resultados');
                 $('#image-container').hide();
                 $('.main-content').removeClass('justify-content-between');
