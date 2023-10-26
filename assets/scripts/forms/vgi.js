@@ -19,69 +19,69 @@ $(document).ready(function() {
     // Create a dict where we assign each step with a bunch of images
     let images = {
         1: [
-            "/assets/imgs/vgi/1/1.png",
-            "/assets/imgs/vgi/1/2.png",
-            "/assets/imgs/vgi/1/3.png",
-            "/assets/imgs/vgi/1/4.png",
+            "../assets/imgs/vgi/1/1.png",
+            "../assets/imgs/vgi/1/2.png",
+            "../assets/imgs/vgi/1/3.png",
+            "../assets/imgs/vgi/1/4.png",
         ],
         2: [
-            "/assets/imgs/vgi/2/1.png",
-            "/assets/imgs/vgi/2/2.png",
-            "/assets/imgs/vgi/2/3.png",
-            "/assets/imgs/vgi/2/4.png",
+            "../assets/imgs/vgi/2/1.png",
+            "../assets/imgs/vgi/2/2.png",
+            "../assets/imgs/vgi/2/3.png",
+            "../assets/imgs/vgi/2/4.png",
         ],
         3: [
-            "/assets/imgs/vgi/3/1.png",
-            "/assets/imgs/vgi/3/2.png",
-            "/assets/imgs/vgi/3/3.png",
-            "/assets/imgs/vgi/3/4.png",
-            "/assets/imgs/vgi/3/5.png",
-            "/assets/imgs/vgi/3/6.png",
+            "../assets/imgs/vgi/3/1.png",
+            "../assets/imgs/vgi/3/2.png",
+            "../assets/imgs/vgi/3/3.png",
+            "../assets/imgs/vgi/3/4.png",
+            "../assets/imgs/vgi/3/5.png",
+            "../assets/imgs/vgi/3/6.png",
         ],
         4: [
-            "/assets/imgs/vgi/4/1.png",
-            "/assets/imgs/vgi/4/2.png",
-            "/assets/imgs/vgi/4/3.png",
-            "/assets/imgs/vgi/4/4.png",
-            "/assets/imgs/vgi/4/5.png",
-            "/assets/imgs/vgi/4/6.png",
+            "../assets/imgs/vgi/4/1.png",
+            "../assets/imgs/vgi/4/2.png",
+            "../assets/imgs/vgi/4/3.png",
+            "../assets/imgs/vgi/4/4.png",
+            "../assets/imgs/vgi/4/5.png",
+            "../assets/imgs/vgi/4/6.png",
         ],
         5: [
-            "/assets/imgs/vgi/5/1.png",
-            "/assets/imgs/vgi/5/2.png",
-            "/assets/imgs/vgi/5/3.png",
-            "/assets/imgs/vgi/5/4.png",
+            "../assets/imgs/vgi/5/1.png",
+            "../assets/imgs/vgi/5/2.png",
+            "../assets/imgs/vgi/5/3.png",
+            "../assets/imgs/vgi/5/4.png",
         ],
         6: [
-            "/assets/imgs/vgi/6/1.png",
-            "/assets/imgs/vgi/6/2.png",
-            "/assets/imgs/vgi/6/3.png",
-            "/assets/imgs/vgi/6/4.png",
-            "/assets/imgs/vgi/6/5.png",
+            "../assets/imgs/vgi/6/1.png",
+            "../assets/imgs/vgi/6/2.png",
+            "../assets/imgs/vgi/6/3.png",
+            "../assets/imgs/vgi/6/4.png",
+            "../assets/imgs/vgi/6/5.png",
         ],
         7: [
-            "/assets/imgs/vgi/7/1.png",
-            "/assets/imgs/vgi/7/2.png",
-            "/assets/imgs/vgi/7/3.png",
-            "/assets/imgs/vgi/7/4.png",
-            "/assets/imgs/vgi/7/4.png",
+            "../assets/imgs/vgi/7/1.png",
+            "../assets/imgs/vgi/7/2.png",
+            "../assets/imgs/vgi/7/3.png",
+            "../assets/imgs/vgi/7/4.png",
+            "../assets/imgs/vgi/7/4.png",
         ],
         8: [
-            "/assets/imgs/vgi/8/1.png",
-            "/assets/imgs/vgi/8/2.png",
-            "/assets/imgs/vgi/8/3.png",
-            "/assets/imgs/vgi/8/4.png",
-            "/assets/imgs/vgi/8/5.png",
+            "../assets/imgs/vgi/8/1.png",
+            "../assets/imgs/vgi/8/2.png",
+            "../assets/imgs/vgi/8/3.png",
+            "../assets/imgs/vgi/8/4.png",
+            "../assets/imgs/vgi/8/5.png",
         ],
         9: [
-            "/assets/imgs/vgi/9/1.png",
-            "/assets/imgs/vgi/9/2.png",
-            "/assets/imgs/vgi/9/3.png",
+            "../assets/imgs/vgi/9/1.png",
+            "../assets/imgs/vgi/9/2.png",
+            "../assets/imgs/vgi/9/3.png",
         ],
         10: [
-            "/assets/imgs/vgi/10/1.png",
-            "/assets/imgs/vgi/10/2.png",
-            "/assets/imgs/vgi/10/3.png",
+            "../assets/imgs/vgi/10/1.png",
+            "../assets/imgs/vgi/10/2.png",
+            "../assets/imgs/vgi/10/3.png",
         ],
     }
 
@@ -108,7 +108,7 @@ $(document).ready(function() {
         if(currentStepIndex == 10){
             localStorage.setItem('selectedValues', JSON.stringify(selectedValues));
             localStorage.setItem('test', 'vgi');
-            window.location.href = '../../../forms/resultados.html';
+            window.location.href = 'resultados.html';
             return;
         }
 
