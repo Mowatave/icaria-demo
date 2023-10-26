@@ -5,7 +5,7 @@ $(document).ready(function() {
 
     // Si no hay contenido en el localStorage redirige al usuario a la página de inicio
     if (!localStorage.getItem('selectedValues')) {
-        window.location.href = '/';
+        window.location.href = '../index.html';
         return;
     }
 
