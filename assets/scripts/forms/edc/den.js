@@ -48,7 +48,7 @@ $(document).ready(function() {
                 return;
             });
         } else {
-            $('#image-container').html('<img src="' + images[currentImage] + '" alt="Imagen"/>');
+            $('#image-container').html('<img src="' + images[currentImage] + '" alt="Imagen" style="max-height: 45vh;"/>');
             $('#asserts').text(asserts);
         }
     }
