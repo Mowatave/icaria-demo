@@ -34,11 +34,11 @@ $(document).ready(function() {
     }
 
     let stepsUrl = {
-        1: "./edc/den.html",
-        2: "./edc/timer.html",
-        3: "./edc/timer.html",
-        4: "./edc/timer.html",
-        5: "./edc/timer.html",
+        1: "edc/den.html",
+        2: "edc/timer.html",
+        3: "edc/timer.html",
+        4: "edc/timer.html",
+        5: "edc/timer.html",
     }
 
     function updateContent(stepIndex) {
