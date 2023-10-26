@@ -16,7 +16,7 @@ $(document).ready(function() {
     if(test === 'vgi'){
         $('#results-vgi').removeClass('hide-important');
 
-        let img = $('<img>').attr('src', '/assets/imgs/resultados/spiderGraph.png');
+        let img = $('<img>').attr('src', '../assets/imgs/resultados/spiderGraph.png');
         $('.spider-graph').append(img);
 
         let sortedValues = Object.entries(selectedValues).sort((a, b) => a[1] - b[1]);
@@ -38,7 +38,7 @@ $(document).ready(function() {
         worstResults.forEach(value => {
             let test = value[0];
             let res = parseInt(value[1]) + 1;
-            let src = `../../assets/imgs/vgi/${test}/${res}.png`; // Genera la URL de la imagen
+            let src = `../assets/imgs/vgi/${test}/${res}.png`; // Genera la URL de la imagen
             
             let $img = $('<img>').attr('src', src).addClass('step-image');
             let $div = $('<div>').addClass('step-image-container');
