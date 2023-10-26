@@ -25,7 +25,7 @@ $(document).ready(function() {
         bestResults.forEach(value => {
             let test = value[0];
             let res = parseInt(value[1])+1;
-            let src = `../../assets/imgs/vgi/${test}/${res}.png`; // Genera la URL de la imagen
+            let src = `../assets/imgs/vgi/${test}/${res}.png`; // Genera la URL de la imagen
             
             let $img = $('<img>').attr('src', src).addClass('step-image');
             let $div = $('<div>').addClass('step-image-container');
