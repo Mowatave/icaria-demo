@@ -36,11 +36,11 @@ $(document).ready(function() {
 
     $('#vgi').click(function() {
         localStorage.clear();
-        window.location.href = '/forms/vgi.html';
+        window.location.href = './forms/vgi.html';
     });
 
     $('#edc').click(function() {
         localStorage.clear();
-        window.location.href = '/forms/edc.html';
+        window.location.href = './forms/edc.html';
     });
 });

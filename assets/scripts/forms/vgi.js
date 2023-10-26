@@ -108,7 +108,7 @@ $(document).ready(function() {
         if(currentStepIndex == 10){
             localStorage.setItem('selectedValues', JSON.stringify(selectedValues));
             localStorage.setItem('test', 'vgi');
-            window.location.href = '/forms/resultados.html';
+            window.location.href = '../../../forms/resultados.html';
             return;
         }
 
