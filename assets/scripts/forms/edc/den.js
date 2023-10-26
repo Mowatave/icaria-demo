@@ -2,12 +2,12 @@ $(document).ready(function() {
 
     // Create a dict where we assign each step with a bunch of images
     let images = [
-        "/assets/imgs/edc/1.png",
-        "/assets/imgs/edc/2.png",
-        "/assets/imgs/edc/3.png",
-        "/assets/imgs/edc/4.png",
-        "/assets/imgs/edc/5.png",
-        "/assets/imgs/edc/6.png",
+        "../../assets/imgs/edc/1.png",
+        "../../assets/imgs/edc/2.png",
+        "../../assets/imgs/edc/3.png",
+        "../../assets/imgs/edc/4.png",
+        "../../assets/imgs/edc/5.png",
+        "../../assets/imgs/edc/6.png",
     ];
 
     let selectedValues = {};
@@ -44,7 +44,7 @@ $(document).ready(function() {
                 localStorage.setItem("selectedValues", JSON.stringify(selectedValues));
                 localStorage.setItem("currentStepIndex", currentStepIndex.toString());
                 localStorage.setItem("imagesHit", JSON.stringify(imagesHit));
-                window.location.href = "/forms/edc.html";
+                window.location.href = "../edc.html";
                 return;
             });
         } else {

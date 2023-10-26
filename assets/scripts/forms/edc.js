@@ -34,11 +34,11 @@ $(document).ready(function() {
     }
 
     let stepsUrl = {
-        1: "/forms/edc/den.html",
-        2: "/forms/edc/timer.html",
-        3: "/forms/edc/timer.html",
-        4: "/forms/edc/timer.html",
-        5: "/forms/edc/timer.html",
+        1: "./edc/den.html",
+        2: "./edc/timer.html",
+        3: "./edc/timer.html",
+        4: "./edc/timer.html",
+        5: "./edc/timer.html",
     }
 
     function updateContent(stepIndex) {
@@ -54,7 +54,7 @@ $(document).ready(function() {
         localStorage.setItem("selectedValues", JSON.stringify(selectedValues));
     } else if(currentStepIndex == 6) {
         localStorage.setItem('test', 'edc');
-        window.location.href = "/forms/resultados.html";
+        window.location.href = 'resultados.html';
         return;
     }
         

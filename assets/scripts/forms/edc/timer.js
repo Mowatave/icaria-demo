@@ -34,7 +34,7 @@ $(document).ready(function() {
                 
                         localStorage.setItem("selectedValues", JSON.stringify(selectedValues));
                         localStorage.setItem("currentStepIndex", currentStepIndex.toString());
-                        window.location.href = "/forms/edc.html";
+                        window.location.href = "../edc.html";
                         return;
                     });
                 }
