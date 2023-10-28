@@ -24,8 +24,8 @@ body {
 .card {
     border: none;
     flex: 0 0 auto; /* Esto asegura que las tarjetas no se estiren y mantengan su ancho */
-    width: 500px; /* Ancho de las tarjetas */
-    height: 800px; /* Altura de las tarjetas */
+    width: 410px; /* Ancho de las tarjetas */
+    height: 512px; /* Altura de las tarjetas */
     background-color: #f5f5f5; /* Color de fondo de las tarjetas */
     border-radius: 30px; /* Redondeo de las esquinas de las tarjetas */
     -webkit-box-shadow: 0px 0px 50px -6px #000000; 
